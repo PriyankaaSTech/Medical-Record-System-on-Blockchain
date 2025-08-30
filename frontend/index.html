@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Record DApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Medical Record DApp</h1>
+
+    <div>
+        <h2>Add Medical Record</h2>
+        <input id="patientName" placeholder="Patient Name">
+        <input id="disease" placeholder="Disease">
+        <input id="treatment" placeholder="Treatment">
+        <button onclick="addRecord()">Add Record</button>
+    </div>
+
+    <div>
+        <h2>Get Medical Record</h2>
+        <input id="recordId" placeholder="Record ID">
+        <button onclick="getRecord()">Get Record</button>
+        <p id="recordResult"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
